@@ -1,27 +1,27 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="369" inline="false" x="350" y="110">
-    <field name="MODE">UNTIL</field>
-    <value name="NUMBER">
-      <block type="sensor_object" id="379">
-        <field name="OBJECT">LEFTSIDE</field>
+  <block type="movement_setmotors" id="254" inline="true" x="348" y="72">
+    <value name="BOTHMOVLEFT">
+      <block type="math_number" id="294">
+        <field name="NUM">100</field>
       </block>
     </value>
-    <statement name="DO">
-      <block type="movement_setmotors" id="254" inline="true">
-        <value name="BOTHMOVLEFT">
-          <block type="math_number" id="294">
-            <field name="NUM">100</field>
-          </block>
-        </value>
-        <value name="BOTHMOVRIGHT">
-          <block type="math_number" id="326">
-            <field name="NUM">100</field>
-          </block>
-        </value>
+    <value name="BOTHMOVRIGHT">
+      <block type="math_number" id="326">
+        <field name="NUM">100</field>
       </block>
-    </statement>
+    </value>
     <next>
-      <block type="movement_stop" id="418"></block>
+      <block type="controls_whileUntil" id="369" inline="false">
+        <field name="MODE">UNTIL</field>
+        <value name="NUMBER">
+          <block type="sensor_object" id="379">
+            <field name="OBJECT">LEFTSIDE</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="movement_stop" id="418"></block>
+        </statement>
+      </block>
     </next>
   </block>
   <block type="sensor_button" id="101" x="501" y="392">
