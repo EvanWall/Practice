@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="1" x="273" y="145">
+  <block type="oled_cleardisplay" id="1" x="194" y="158">
     <next>
       <block type="controls_whileUntil" id="2" inline="false">
         <field name="MODE">UNTIL</field>
@@ -21,8 +21,8 @@
         <statement name="DO">
           <block type="oled_setcursor" id="6" inline="true">
             <value name="STARTX">
-              <block type="math_number" id="7">
-                <field name="NUM">0</field>
+              <block type="sensor_object" id="120">
+                <field name="OBJECT">LEFTFRONT</field>
               </block>
             </value>
             <value name="STARTY">
@@ -67,7 +67,68 @@
                       </block>
                     </value>
                     <next>
-                      <block type="movement_stop" id="110"></block>
+                      <block type="movement_stop" id="110">
+                        <next>
+                          <block type="controls_whileUntil" id="117" inline="false">
+                            <field name="MODE">WHILE</field>
+                            <value name="NUMBER">
+                              <block type="logic_compare" id="119" inline="true">
+                                <field name="OP">LT</field>
+                                <value name="A">
+                                  <block type="sensor_object" id="118">
+                                    <field name="OBJECT">LEFTFRONT</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="math_number" id="121">
+                                    <field name="NUM">90</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO">
+                              <block type="oled_setcursor" id="125" inline="true">
+                                <value name="STARTX">
+                                  <block type="sensor_object" id="126">
+                                    <field name="OBJECT">LEFTFRONT</field>
+                                  </block>
+                                </value>
+                                <value name="STARTY">
+                                  <block type="math_number" id="127">
+                                    <field name="NUM">20</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="oled_drawnumber" id="128" inline="true">
+                                    <value name="NUMBER">
+                                      <block type="sensor_object" id="129">
+                                        <field name="OBJECT">LEFTFRONT</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="movement_setmotors" id="122" inline="true">
+                                        <value name="BOTHMOVLEFT">
+                                          <block type="math_number" id="123">
+                                            <field name="NUM">100</field>
+                                          </block>
+                                        </value>
+                                        <value name="BOTHMOVRIGHT">
+                                          <block type="math_number" id="124">
+                                            <field name="NUM">100</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="movement_stop" id="139"></block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
                     </next>
                   </block>
                 </next>
