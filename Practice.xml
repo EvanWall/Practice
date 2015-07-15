@@ -1,20 +1,21 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_if" id="244" inline="false" x="348" y="3">
-    <value name="IF0">
+  <block type="controls_whileUntil" id="369" inline="false" x="350" y="110">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
       <block type="sensor_button" id="101">
-        <field name="OBJECT">UP</field>
+        <field name="OBJECT">ENTER</field>
       </block>
     </value>
-    <statement name="DO0">
+    <statement name="DO">
       <block type="movement_setmotors" id="254" inline="true">
         <value name="BOTHMOVLEFT">
           <block type="math_number" id="294">
-            <field name="NUM">10</field>
+            <field name="NUM">100</field>
           </block>
         </value>
         <value name="BOTHMOVRIGHT">
           <block type="math_number" id="326">
-            <field name="NUM">10</field>
+            <field name="NUM">100</field>
           </block>
         </value>
       </block>
