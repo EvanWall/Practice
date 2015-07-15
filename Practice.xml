@@ -13,8 +13,18 @@
     <next>
       <block type="controls_if" id="14" inline="false">
         <value name="IF0">
-          <block type="sensor_object" id="5">
-            <field name="OBJECT">LEFTSIDE</field>
+          <block type="math_shift" id="43" inline="true">
+            <field name="OP">LEFT</field>
+            <value name="A">
+              <block type="sensor_object" id="5">
+                <field name="OBJECT">LEFTSIDE</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="57">
+                <field name="NUM">20</field>
+              </block>
+            </value>
           </block>
         </value>
         <statement name="DO0">
