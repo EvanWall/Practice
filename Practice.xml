@@ -19,40 +19,17 @@
           </block>
         </value>
         <statement name="DO">
-          <block type="oled_setcursor" id="6" inline="true">
-            <value name="STARTX">
-              <block type="sensor_object" id="120">
-                <field name="OBJECT">LEFTFRONT</field>
+          <block type="movement_setmotors" id="11" inline="true">
+            <value name="BOTHMOVLEFT">
+              <block type="math_number" id="12">
+                <field name="NUM">100</field>
               </block>
             </value>
-            <value name="STARTY">
-              <block type="math_number" id="8">
-                <field name="NUM">20</field>
+            <value name="BOTHMOVRIGHT">
+              <block type="math_number" id="13">
+                <field name="NUM">100</field>
               </block>
             </value>
-            <next>
-              <block type="oled_drawnumber" id="9" inline="true">
-                <value name="NUMBER">
-                  <block type="sensor_object" id="10">
-                    <field name="OBJECT">LEFTFRONT</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="movement_setmotors" id="11" inline="true">
-                    <value name="BOTHMOVLEFT">
-                      <block type="math_number" id="12">
-                        <field name="NUM">100</field>
-                      </block>
-                    </value>
-                    <value name="BOTHMOVRIGHT">
-                      <block type="math_number" id="13">
-                        <field name="NUM">100</field>
-                      </block>
-                    </value>
-                  </block>
-                </next>
-              </block>
-            </next>
           </block>
         </statement>
         <next>
@@ -85,40 +62,17 @@
                           </block>
                         </value>
                         <statement name="DO">
-                          <block type="oled_setcursor" id="125" inline="true">
-                            <value name="STARTX">
-                              <block type="sensor_object" id="126">
-                                <field name="OBJECT">LEFTFRONT</field>
+                          <block type="movement_setmotors" id="122" inline="true">
+                            <value name="BOTHMOVLEFT">
+                              <block type="math_number" id="123">
+                                <field name="NUM">100</field>
                               </block>
                             </value>
-                            <value name="STARTY">
-                              <block type="math_number" id="127">
-                                <field name="NUM">20</field>
+                            <value name="BOTHMOVRIGHT">
+                              <block type="math_number" id="124">
+                                <field name="NUM">100</field>
                               </block>
                             </value>
-                            <next>
-                              <block type="oled_drawnumber" id="128" inline="true">
-                                <value name="NUMBER">
-                                  <block type="sensor_object" id="129">
-                                    <field name="OBJECT">LEFTFRONT</field>
-                                  </block>
-                                </value>
-                                <next>
-                                  <block type="movement_setmotors" id="122" inline="true">
-                                    <value name="BOTHMOVLEFT">
-                                      <block type="math_number" id="123">
-                                        <field name="NUM">100</field>
-                                      </block>
-                                    </value>
-                                    <value name="BOTHMOVRIGHT">
-                                      <block type="math_number" id="124">
-                                        <field name="NUM">100</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </next>
-                              </block>
-                            </next>
                           </block>
                         </statement>
                         <next>
@@ -151,40 +105,17 @@
                                           </block>
                                         </value>
                                         <statement name="DO">
-                                          <block type="oled_setcursor" id="158" inline="true">
-                                            <value name="STARTX">
-                                              <block type="sensor_object" id="159">
-                                                <field name="OBJECT">LEFTFRONT</field>
+                                          <block type="movement_setmotors" id="163" inline="true">
+                                            <value name="BOTHMOVLEFT">
+                                              <block type="math_number" id="164">
+                                                <field name="NUM">100</field>
                                               </block>
                                             </value>
-                                            <value name="STARTY">
-                                              <block type="math_number" id="160">
-                                                <field name="NUM">20</field>
+                                            <value name="BOTHMOVRIGHT">
+                                              <block type="math_number" id="165">
+                                                <field name="NUM">100</field>
                                               </block>
                                             </value>
-                                            <next>
-                                              <block type="oled_drawnumber" id="161" inline="true">
-                                                <value name="NUMBER">
-                                                  <block type="sensor_object" id="162">
-                                                    <field name="OBJECT">LEFTFRONT</field>
-                                                  </block>
-                                                </value>
-                                                <next>
-                                                  <block type="movement_setmotors" id="163" inline="true">
-                                                    <value name="BOTHMOVLEFT">
-                                                      <block type="math_number" id="164">
-                                                        <field name="NUM">100</field>
-                                                      </block>
-                                                    </value>
-                                                    <value name="BOTHMOVRIGHT">
-                                                      <block type="math_number" id="165">
-                                                        <field name="NUM">100</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </next>
-                                              </block>
-                                            </next>
                                           </block>
                                         </statement>
                                         <next>
