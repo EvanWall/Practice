@@ -1,24 +1,24 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="9" inline="false" x="271" y="172">
-    <field name="MODE">UNTIL</field>
-    <value name="NUMBER">
-      <block type="logic_compare" id="10" inline="true">
-        <field name="OP">LT</field>
-        <value name="A">
-          <block type="sensor_object" id="11">
-            <field name="OBJECT">LEFTFRONT</field>
+  <block type="oled_cleardisplay" id="1" x="273" y="145">
+    <next>
+      <block type="controls_whileUntil" id="9" inline="false">
+        <field name="MODE">UNTIL</field>
+        <value name="NUMBER">
+          <block type="logic_compare" id="10" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="sensor_object" id="11">
+                <field name="OBJECT">LEFTFRONT</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="12">
+                <field name="NUM">90</field>
+              </block>
+            </value>
           </block>
         </value>
-        <value name="B">
-          <block type="math_number" id="12">
-            <field name="NUM">90</field>
-          </block>
-        </value>
-      </block>
-    </value>
-    <statement name="DO">
-      <block type="oled_cleardisplay" id="1">
-        <next>
+        <statement name="DO">
           <block type="oled_setcursor" id="2" inline="true">
             <value name="STARTX">
               <block type="math_number" id="3">
@@ -54,11 +54,11 @@
               </block>
             </next>
           </block>
+        </statement>
+        <next>
+          <block type="movement_stop" id="13"></block>
         </next>
       </block>
-    </statement>
-    <next>
-      <block type="movement_stop" id="13"></block>
     </next>
   </block>
 </xml>
