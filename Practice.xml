@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_setmotors" id="1" inline="true" x="224" y="171">
+  <block type="movement_setmotors" id="1" inline="true" x="218" y="144">
     <value name="BOTHMOVLEFT">
       <block type="math_number" id="2">
         <field name="NUM">100</field>
@@ -14,7 +14,7 @@
       <block type="controls_if" id="14" inline="false">
         <value name="IF0">
           <block type="math_shift" id="43" inline="true">
-            <field name="OP">LEFT</field>
+            <field name="OP">RIGHT</field>
             <value name="A">
               <block type="sensor_object" id="5">
                 <field name="OBJECT">LEFTSIDE</field>
@@ -22,7 +22,7 @@
             </value>
             <value name="B">
               <block type="math_number" id="57">
-                <field name="NUM">0</field>
+                <field name="NUM">20</field>
               </block>
             </value>
           </block>
