@@ -83,7 +83,7 @@
                                   <block type="robot_delay" id="152" inline="true">
                                     <value name="DELAY">
                                       <block type="math_number" id="153">
-                                        <field name="NUM">1310</field>
+                                        <field name="NUM">1270</field>
                                       </block>
                                     </value>
                                     <next>
@@ -126,37 +126,22 @@
                                                   <block type="robot_delay" id="168" inline="true">
                                                     <value name="DELAY">
                                                       <block type="math_number" id="169">
-                                                        <field name="NUM">1310</field>
+                                                        <field name="NUM">1270</field>
                                                       </block>
                                                     </value>
                                                     <next>
                                                       <block type="controls_whileUntil" id="170" inline="false">
                                                         <field name="MODE">UNTIL</field>
-                                                        <value name="NUMBER">
-                                                          <block type="logic_compare" id="171" inline="true">
-                                                            <field name="OP">GT</field>
-                                                            <value name="A">
-                                                              <block type="sensor_object" id="172">
-                                                                <field name="OBJECT">LEFTSIDE</field>
-                                                              </block>
-                                                            </value>
-                                                            <value name="B">
-                                                              <block type="math_number" id="173">
-                                                                <field name="NUM">100</field>
-                                                              </block>
-                                                            </value>
-                                                          </block>
-                                                        </value>
                                                         <statement name="DO">
                                                           <block type="movement_setmotors" id="174" inline="true">
                                                             <value name="BOTHMOVLEFT">
                                                               <block type="math_number" id="175">
-                                                                <field name="NUM">100</field>
+                                                                <field name="NUM">10</field>
                                                               </block>
                                                             </value>
                                                             <value name="BOTHMOVRIGHT">
                                                               <block type="math_number" id="176">
-                                                                <field name="NUM">100</field>
+                                                                <field name="NUM">10</field>
                                                               </block>
                                                             </value>
                                                           </block>
@@ -190,5 +175,18 @@
         </next>
       </block>
     </next>
+  </block>
+  <block type="logic_compare" id="171" inline="true" x="296" y="922">
+    <field name="OP">GT</field>
+    <value name="A">
+      <block type="sensor_object" id="172">
+        <field name="OBJECT">LEFTSIDE</field>
+      </block>
+    </value>
+    <value name="B">
+      <block type="math_number" id="173">
+        <field name="NUM">100</field>
+      </block>
+    </value>
   </block>
 </xml>
