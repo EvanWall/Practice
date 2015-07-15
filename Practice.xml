@@ -28,7 +28,18 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_stop" id="8"></block>
+          <block type="movement_setmotors" id="19" inline="true">
+            <value name="BOTHMOVLEFT">
+              <block type="math_number" id="26">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <value name="BOTHMOVRIGHT">
+              <block type="math_number" id="33">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+          </block>
         </statement>
       </block>
     </next>
