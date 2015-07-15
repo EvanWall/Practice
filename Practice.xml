@@ -162,7 +162,22 @@
                                                           </block>
                                                         </statement>
                                                         <next>
-                                                          <block type="movement_stop" id="192"></block>
+                                                          <block type="movement_stop" id="192">
+                                                            <next>
+                                                              <block type="movement_setmotors" id="202" inline="true">
+                                                                <value name="BOTHMOVLEFT">
+                                                                  <block type="math_number" id="212">
+                                                                    <field name="NUM">5</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="BOTHMOVRIGHT">
+                                                                  <block type="math_number" id="219">
+                                                                    <field name="NUM">5</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </next>
+                                                          </block>
                                                         </next>
                                                       </block>
                                                     </next>
