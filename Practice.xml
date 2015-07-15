@@ -55,28 +55,23 @@
             </next>
           </block>
         </statement>
-        <next>
-          <block type="movement_stop" id="139">
-            <next>
-              <block type="movement_right" id="39">
-                <next>
-                  <block type="robot_delay" id="90" inline="true">
-                    <value name="DELAY">
-                      <block type="math_number" id="100">
-                        <field name="NUM">1325</field>
-                      </block>
-                    </value>
-                  </block>
-                </next>
-              </block>
-            </next>
+      </block>
+    </next>
+  </block>
+  <block type="movement_stop" id="139" x="212" y="405"></block>
+  <block type="movement_right" id="39" x="139" y="438">
+    <next>
+      <block type="robot_delay" id="90" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="100">
+            <field name="NUM">1325</field>
           </block>
-        </next>
+        </value>
       </block>
     </next>
   </block>
   <block type="controls_whileUntil" id="117" inline="false" x="255" y="483">
-    <field name="MODE">WHILE</field>
+    <field name="MODE">UNTIL</field>
     <value name="NUMBER">
       <block type="logic_compare" id="119" inline="true">
         <field name="OP">LT</field>
