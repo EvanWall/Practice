@@ -66,9 +66,6 @@
                         <field name="NUM">50</field>
                       </block>
                     </value>
-                    <next>
-                      <block type="movement_stop" id="88"></block>
-                    </next>
                   </block>
                 </next>
               </block>
@@ -78,4 +75,5 @@
       </block>
     </next>
   </block>
+  <block type="movement_stop" id="88" x="252" y="454"></block>
 </xml>
