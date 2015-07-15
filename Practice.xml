@@ -11,24 +11,24 @@
       </block>
     </value>
     <next>
-      <block type="controls_if" id="14" inline="false">
+      <block type="controls_if" id="4" inline="false">
         <value name="IF0">
-          <block type="math_shift" id="43" inline="true">
+          <block type="math_shift" id="5" inline="true">
             <field name="OP">RIGHT</field>
             <value name="A">
-              <block type="sensor_object" id="5">
+              <block type="sensor_object" id="6">
                 <field name="OBJECT">LEFTSIDE</field>
               </block>
             </value>
             <value name="B">
-              <block type="math_number" id="57">
-                <field name="NUM">20</field>
+              <block type="math_number" id="7">
+                <field name="NUM">150</field>
               </block>
             </value>
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_stop" id="6"></block>
+          <block type="movement_stop" id="8"></block>
         </statement>
       </block>
     </next>
