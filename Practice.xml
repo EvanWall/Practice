@@ -200,28 +200,4 @@
       </block>
     </next>
   </block>
-  <block type="controls_repeat" id="237" inline="true" x="185" y="893">
-    <value name="TIMES">
-      <block type="math_number" id="244">
-        <field name="NUM">2</field>
-      </block>
-    </value>
-    <statement name="DO">
-      <block type="movement_setmotors" id="181" inline="true">
-        <value name="BOTHMOVLEFT">
-          <block type="math_number" id="188">
-            <field name="NUM">50</field>
-          </block>
-        </value>
-        <value name="BOTHMOVRIGHT">
-          <block type="math_number" id="204">
-            <field name="NUM">50</field>
-          </block>
-        </value>
-      </block>
-    </statement>
-    <next>
-      <block type="movement_stop" id="214"></block>
-    </next>
-  </block>
 </xml>
