@@ -169,7 +169,31 @@
                                                               </block>
                                                             </statement>
                                                             <next>
-                                                              <block type="movement_stop" id="171"></block>
+                                                              <block type="movement_stop" id="171">
+                                                                <next>
+                                                                  <block type="controls_repeat" id="258" inline="true">
+                                                                    <value name="TIMES">
+                                                                      <block type="math_number" id="268">
+                                                                        <field name="NUM">3</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <statement name="DO">
+                                                                      <block type="movement_setmotors" id="297" inline="true">
+                                                                        <value name="BOTHMOVLEFT">
+                                                                          <block type="math_number" id="304">
+                                                                            <field name="NUM">20</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="BOTHMOVRIGHT">
+                                                                          <block type="math_number" id="311">
+                                                                            <field name="NUM">20</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </statement>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
                                                             </next>
                                                           </block>
                                                         </next>
