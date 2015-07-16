@@ -87,96 +87,114 @@
                                       </block>
                                     </value>
                                     <next>
-                                      <block type="controls_whileUntil" id="24" inline="false">
-                                        <field name="MODE">UNTIL</field>
-                                        <value name="NUMBER">
-                                          <block type="logic_compare" id="25" inline="true">
-                                            <field name="OP">LT</field>
-                                            <value name="A">
-                                              <block type="sensor_object" id="26">
-                                                <field name="OBJECT">LEFTFRONT</field>
-                                              </block>
-                                            </value>
-                                            <value name="B">
-                                              <block type="math_number" id="27">
-                                                <field name="NUM">30</field>
-                                              </block>
-                                            </value>
+                                      <block type="movement_leftmotor" id="224" inline="true">
+                                        <value name="MOVLEFT">
+                                          <block type="math_number" id="251">
+                                            <field name="NUM">15</field>
                                           </block>
                                         </value>
-                                        <statement name="DO">
-                                          <block type="movement_setmotors" id="28" inline="true">
-                                            <value name="BOTHMOVLEFT">
-                                              <block type="math_number" id="29">
-                                                <field name="NUM">100</field>
-                                              </block>
-                                            </value>
-                                            <value name="BOTHMOVRIGHT">
-                                              <block type="math_number" id="30">
-                                                <field name="NUM">100</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </statement>
                                         <next>
-                                          <block type="movement_stop" id="31">
+                                          <block type="controls_whileUntil" id="24" inline="false">
+                                            <field name="MODE">UNTIL</field>
+                                            <value name="NUMBER">
+                                              <block type="logic_compare" id="25" inline="true">
+                                                <field name="OP">LT</field>
+                                                <value name="A">
+                                                  <block type="sensor_object" id="26">
+                                                    <field name="OBJECT">LEFTFRONT</field>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <block type="math_number" id="27">
+                                                    <field name="NUM">30</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <statement name="DO">
+                                              <block type="movement_setmotors" id="28" inline="true">
+                                                <value name="BOTHMOVLEFT">
+                                                  <block type="math_number" id="29">
+                                                    <field name="NUM">100</field>
+                                                  </block>
+                                                </value>
+                                                <value name="BOTHMOVRIGHT">
+                                                  <block type="math_number" id="30">
+                                                    <field name="NUM">100</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </statement>
                                             <next>
-                                              <block type="movement_right" id="32">
+                                              <block type="movement_stop" id="31">
                                                 <next>
-                                                  <block type="robot_delay" id="33" inline="true">
-                                                    <value name="DELAY">
-                                                      <block type="math_number" id="34">
-                                                        <field name="NUM">1000</field>
-                                                      </block>
-                                                    </value>
+                                                  <block type="movement_right" id="32">
                                                     <next>
-                                                      <block type="controls_whileUntil" id="35" inline="false">
-                                                        <field name="MODE">UNTIL</field>
-                                                        <value name="NUMBER">
-                                                          <block type="logic_compare" id="36" inline="true">
-                                                            <field name="OP">GT</field>
-                                                            <value name="A">
-                                                              <block type="sensor_object" id="37">
-                                                                <field name="OBJECT">LEFTSIDE</field>
-                                                              </block>
-                                                            </value>
-                                                            <value name="B">
-                                                              <block type="math_number" id="49">
-                                                                <field name="NUM">99</field>
-                                                              </block>
-                                                            </value>
+                                                      <block type="robot_delay" id="33" inline="true">
+                                                        <value name="DELAY">
+                                                          <block type="math_number" id="34">
+                                                            <field name="NUM">1000</field>
                                                           </block>
                                                         </value>
-                                                        <statement name="DO">
-                                                          <block type="movement_setmotors" id="39" inline="true">
-                                                            <value name="BOTHMOVLEFT">
-                                                              <block type="math_number" id="40">
-                                                                <field name="NUM">100</field>
-                                                              </block>
-                                                            </value>
-                                                            <value name="BOTHMOVRIGHT">
-                                                              <block type="math_number" id="41">
-                                                                <field name="NUM">100</field>
-                                                              </block>
-                                                            </value>
-                                                          </block>
-                                                        </statement>
                                                         <next>
-                                                          <block type="movement_stop" id="171">
-                                                            <next>
-                                                              <block type="movement_setmotors" id="181" inline="true">
+                                                          <block type="controls_whileUntil" id="35" inline="false">
+                                                            <field name="MODE">UNTIL</field>
+                                                            <value name="NUMBER">
+                                                              <block type="logic_compare" id="36" inline="true">
+                                                                <field name="OP">GT</field>
+                                                                <value name="A">
+                                                                  <block type="sensor_object" id="37">
+                                                                    <field name="OBJECT">LEFTSIDE</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="B">
+                                                                  <block type="math_number" id="49">
+                                                                    <field name="NUM">99</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <statement name="DO">
+                                                              <block type="movement_setmotors" id="39" inline="true">
                                                                 <value name="BOTHMOVLEFT">
-                                                                  <block type="math_number" id="188">
-                                                                    <field name="NUM">50</field>
+                                                                  <block type="math_number" id="40">
+                                                                    <field name="NUM">100</field>
                                                                   </block>
                                                                 </value>
                                                                 <value name="BOTHMOVRIGHT">
-                                                                  <block type="math_number" id="204">
-                                                                    <field name="NUM">50</field>
+                                                                  <block type="math_number" id="41">
+                                                                    <field name="NUM">100</field>
                                                                   </block>
                                                                 </value>
+                                                              </block>
+                                                            </statement>
+                                                            <next>
+                                                              <block type="movement_stop" id="171">
                                                                 <next>
-                                                                  <block type="movement_stop" id="214"></block>
+                                                                  <block type="controls_repeat" id="237" inline="true">
+                                                                    <value name="TIMES">
+                                                                      <block type="math_number" id="244">
+                                                                        <field name="NUM">2</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <statement name="DO">
+                                                                      <block type="movement_setmotors" id="181" inline="true">
+                                                                        <value name="BOTHMOVLEFT">
+                                                                          <block type="math_number" id="188">
+                                                                            <field name="NUM">50</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="BOTHMOVRIGHT">
+                                                                          <block type="math_number" id="204">
+                                                                            <field name="NUM">50</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </statement>
+                                                                    <next>
+                                                                      <block type="movement_stop" id="214"></block>
+                                                                    </next>
+                                                                  </block>
                                                                 </next>
                                                               </block>
                                                             </next>
